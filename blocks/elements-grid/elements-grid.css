@@ -1,0 +1,10 @@
+.elements-grid {
+    margin-bottom: 66px;
+    width: 68.75%;
+}
+
+@media screen and (max-width: 480px) {
+    .elements-grid {
+        width: 95%;
+    }
+}
