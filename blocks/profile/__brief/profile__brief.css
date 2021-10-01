@@ -19,7 +19,8 @@
 }
 
 @media screen and (max-width: 480px) {
-    .profile__brief {       
+    .profile__brief { 
+        padding-top: 7px;   /* Из-за того что фигма показывает отступ не от края буквы У, а от остальных букв, взял значение, которое меньше чем в макете, чтобы был схождение по pixel perfect */
         max-width: 282px;
         line-height: 17px;
         font-size: 14px;

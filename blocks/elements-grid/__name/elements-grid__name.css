@@ -10,16 +10,3 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
-.elements-grid__name:hover {
-    cursor: pointer;
-}
-
-.elements-grid__name:hover::after {  /* Отчаяная попытка сделать подсказку с полным названием, на случай если, название не умещается в карточке. */
-    content: attr(data-title);       /* Но не получилось "избавить" её от ужасного внешнего вида. Поэтому оставил только тестовой карточке с длинным именем */
-    position: absolute;
-    left: 20%; bottom: 5%; 
-    z-index: 1; 
-    font-size: 12px; 
-    text-decoration: underline;
-}

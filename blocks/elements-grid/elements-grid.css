@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 480px) {
     .elements-grid {
+        margin-bottom: 48px;
         width: 95%;
     }
 }

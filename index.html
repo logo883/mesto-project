@@ -17,11 +17,11 @@
                 <div class="profile__info">
                     <div class="profile__name-container">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button class="profile__edit-button"></button>
+                        <button type="button" aria-label="Изменить" class="profile__edit-button"></button>
                     </div>                   
                     <p class="profile__brief">Исследователь океана</p>
                 </div>
-                <button class="profile__add-button"></button>
+                <button type="button" aria-label="Добавить" class="profile__add-button"></button>
             </section>
 
             <section class="elements-grid">
@@ -30,42 +30,42 @@
                         <img src="./images/Karachaevsk.jpg" alt="Карачаевск" class="elements-grid__image">
                         <div class="elements-grid__nameplate">
                             <h2 class="elements-grid__name">Карачаевск</h2>
-                            <button type="button" class="elements-grid__like-button elements-grid__like-button_active"></button>
+                            <button type="button" aria-label="Мне нравится" class="elements-grid__like-button elements-grid__like-button_active"></button>
                         </div>
                     </li>
                     <li class="elements-grid__item">
                         <img src="./images/Maunt-Elbrus.jpg" alt="Гора Эльбрус" class="elements-grid__image">
                         <div class="elements-grid__nameplate">
                             <h2 class="elements-grid__name">Гора Эльбрус</h2>
-                            <button type="button" class="elements-grid__like-button"></button>
+                            <button type="button" aria-label="Мне нравится" class="elements-grid__like-button"></button>
                         </div>
                     </li>
                     <li class="elements-grid__item">
                         <img src="./images/Dombai.jpg" alt="Домбай" class="elements-grid__image">
                         <div class="elements-grid__nameplate">
                             <h2 class="elements-grid__name">Домбай</h2>
-                            <button type="button" class="elements-grid__like-button elements-grid__like-button_active"></button>
+                            <button type="button" aria-label="Мне нравится" class="elements-grid__like-button elements-grid__like-button_active"></button>
                         </div>
                     </li>
                     <li class="elements-grid__item">
                         <img src="./images/Maunt-Elbrus.jpg" alt="Гора Эльбрус" class="elements-grid__image">
                         <div class="elements-grid__nameplate">
                             <h2 class="elements-grid__name">Гора Эльбрус</h2>
-                            <button type="button" class="elements-grid__like-button elements-grid__like-button_active"></button>
+                            <button type="button" aria-label="Мне нравится" class="elements-grid__like-button elements-grid__like-button_active"></button>
                         </div>
                     </li>
                     <li class="elements-grid__item">
                         <img src="./images/Dombai.jpg" alt="Домбай" class="elements-grid__image">
                         <div class="elements-grid__nameplate">
                             <h2 data-title="Домбай дальний план" class="elements-grid__name">Домбай дальний план</h2>
-                            <button type="button" class="elements-grid__like-button"></button>
+                            <button type="button" aria-label="Мне нравится" class="elements-grid__like-button"></button>
                         </div>
                     </li>
                     <li class="elements-grid__item">
                         <img src="./images/Karachaevsk.jpg" alt="Карачаевск" class="elements-grid__image">
                         <div class="elements-grid__nameplate">
                             <h2 class="elements-grid__name">Карачаевск</h2>
-                            <button type="button" class="elements-grid__like-button"></button>
+                            <button type="button" aria-label="Мне нравится" class="elements-grid__like-button"></button>
                         </div>
                     </li>
                 </ul>
@@ -76,14 +76,14 @@
             <p class="footer__copyright">&#169; 2021 Mesto Russia</p>
         </footer>
 
-        <div class="popup popup_opened">
+         <div class="popup popup_opened">  <!-- popup_opened -->
             <div class="popup__container">
-                <button type="button" class="popup__close-button"></button>
+                <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <form name="Profile-form" class="popup__form">
                     <fieldset class="popup__fieldset">
-                        <input type="text" placeholder="Жак-Ив Кусто" name="user-name" minlength="2" maxlength="40" required class="popup__input">
-                        <input type="text" placeholder="Исследователь океана" name="user-about" minlength="2" maxlength="40" required class="popup__input">
+                        <input type="text" placeholder="Имя пользователя" value="Жак-Ив Кусто" name="user-name" minlength="2" maxlength="40" required class="popup__input">
+                        <input type="text" placeholder="Краткое описание" value="Исследователь океана" name="user-about" minlength="2" maxlength="40" required class="popup__input">
                         <button type="submit" class="popup__submit-button">Сохранить</button>
                     </fieldset>
                 </form>
