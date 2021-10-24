@@ -76,19 +76,33 @@
             <p class="footer__copyright">&#169; 2021 Mesto Russia</p>
         </footer>
 
-         <div class="popup popup_type_edit">  <!-- popup_opened -->
+        <div class="popup popup_type_edit">  <!-- popup_opened -->
             <div class="popup__container">
                 <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <form name="Profile-form" class="popup__form popup__form_type_edit">
                     <fieldset class="popup__fieldset">
-                        <input id="popup__input_user-name" type="text" placeholder="Имя пользователя" value="Жак-Ив Кусто" name="user-name" minlength="2" maxlength="40" required class="popup__input">
-                        <input id="popup__input_user-about" type="text" placeholder="Краткое описание" value="Исследователь океана" name="user-about" minlength="2" maxlength="40" required class="popup__input">
+                        <input id="popup__input_user-name" type="text" placeholder="Имя пользователя"  name="user-name" minlength="2" maxlength="40" required class="popup__input">
+                        <input id="popup__input_user-about" type="text" placeholder="Краткое описание"  name="user-about" minlength="2" maxlength="40" required class="popup__input">
                         <button type="submit" class="popup__submit-button">Сохранить</button>
                     </fieldset>
                 </form>
-            </div>
         </div>
+
+        <div class="popup popup_type_add popup_opened">  <!-- popup_opened -->
+            <div class="popup__container">
+                <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
+                <h2 class="popup__title">Новое Место</h2>
+                <form name="Profile-form" class="popup__form popup__form_type_edit">
+                    <fieldset class="popup__fieldset">
+                        <input id="popup__input_user-name" type="text" placeholder="Название" name="user-name" minlength="2" maxlength="40" required class="popup__input">
+                        <input id="popup__input_user-about" type="text" placeholder="Ссылка на картинку" name="user-about" minlength="2" maxlength="40" required class="popup__input">
+                        <button type="submit" class="popup__submit-button">Сохранить</button>
+                    </fieldset>
+                </form>
+            </div>    
+        </div>
+
         <script src="./js/script.js"></script>
     </body>
 </html>
