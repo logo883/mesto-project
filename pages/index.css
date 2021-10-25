@@ -21,6 +21,7 @@
 @import url(../blocks/elements-grid/elements-grid.css);
 @import url(../blocks/elements-grid/__list/elements-grid__list.css);
 @import url(../blocks/elements-grid/__item/elements-grid__item.css);
+@import url(../blocks/elements-grid/__delete-button/elements-grid__delete-button.css);
 @import url(../blocks/elements-grid/__image/elements-grid__image.css);
 @import url(../blocks/elements-grid/__nameplate/elements-grid__nameplate.css);
 @import url(../blocks/elements-grid/__name/elements-grid__name.css);
