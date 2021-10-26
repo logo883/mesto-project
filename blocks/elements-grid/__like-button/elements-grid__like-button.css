@@ -3,6 +3,7 @@
     width: 22px;
     height: 19px;
 
+    background: none;
     background-image: url(../../../images/like.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -12,6 +13,6 @@
 }
 
 .elements-grid__like-button:hover {
-    opacity: 50%;
+    opacity: 90%;
     cursor: pointer;
 }
