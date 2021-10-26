@@ -5,3 +5,6 @@
     object-position: center;
 }
 
+.elements-grid__image:hover {
+    cursor: pointer;
+}

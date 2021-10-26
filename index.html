@@ -34,11 +34,11 @@
             <p class="footer__copyright">&#169; 2021 Mesto Russia</p>
         </footer>
 
-        <div class="popup popup_type_edit">  <!-- popup_opened -->
-            <div class="popup__container">
+        <div class="popup popup_type_edit"> 
+            <div class="popup__form-container">
                 <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form name="Profile-form" class="popup__form popup__form_type_edit">
+                <form name="Profile-form" class="popup__form">
                     <fieldset class="popup__fieldset">
                         <input id="popup__input_user-name" type="text" placeholder="Имя пользователя"  name="user-name" minlength="2" maxlength="40" required class="popup__input">
                         <input id="popup__input_user-about" type="text" placeholder="Краткое описание"  name="user-about" minlength="2" maxlength="40" required class="popup__input">
@@ -48,11 +48,11 @@
             </div>    
         </div>
 
-        <div class="popup popup_type_add">  <!-- popup_opened -->
-            <div class="popup__container">
+        <div class="popup popup_type_add">
+            <div class="popup__form-container">
                 <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
                 <h2 class="popup__title">Новое Место</h2>
-                <form name="Profile-form" class="popup__form popup__form_type_edit">
+                <form name="Profile-form" class="popup__form">
                     <fieldset class="popup__fieldset">
                         <input id="popup__input_card-name" type="text" placeholder="Название" name="user-name" minlength="2" maxlength="40" required class="popup__input">
                         <input id="popup__input_card-link" type="text" placeholder="Ссылка на картинку" name="user-about" minlength="2" maxlength="100" required class="popup__input">
@@ -62,10 +62,18 @@
             </div>    
         </div>
 
+        <div class="popup popup_type_image">
+            <div class="popup__image-container">
+                <button type="button" aria-label="Закрыть" class="popup__close-button"></button>
+                <img src="./images/placeholder.jpg" alt="Фотография места" class="popup__image">
+                <h3 class="popup__caption"></h3>
+            </div>
+        </div>
+
         <template class="item-template">
             <li class="elements-grid__item">
                 <button type="button" aria-label="Удалить" class="elements-grid__delete-button"></button>
-                <img src="./images/Maunt-Elbrus.jpg" alt="Фотография места" class="elements-grid__image">
+                <img src="" alt="Фотография места" class="elements-grid__image">
                 <div class="elements-grid__nameplate">
                     <h2 class="elements-grid__name"></h2>
                     <button type="button" aria-label="Мне нравится" class="elements-grid__like-button"></button>
